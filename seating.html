@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Seating Area</title>
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script> src="http://code.jquery.com/jquery-2.1.4.min.js" </script>
+    <script src="http://jqueryvalidation.org/files/dist/jquery.validate.min.js"></script>
+    <script src="http://jqueryvalidation.org/files/dist/additional-methods.min.js"></script>
+</head>
+<body class="seating">
+
+<nav class="navbar navbar-inverse navbar-fixed-top" id="my-navbar">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <a href="index.html" class="navbar-brand">BookMyTable</a>
+        </div><!-- Navbar Header-->
+        <div class="collapse navbar-collapse" id="navbar-collapse">
+
+
+            <a href="createReservationOwner.html" class="btn btn-warning navbar-btn navbar-right">Create Reservation</a>
+
+
+            <ul class="nav navbar-nav">
+                <li><a href=ownerRequirements.html>Home</a>
+                <li><a href="settings.html">Settings</a>
+            </ul>
+        </div>
+    </div><!-- End Container-->
+</nav><!-- End navbar -->
+
+
+<div class="jumbotron clearfix">
+    <div class="container text-center bookTable ">
+        <h1 class="upper-case">Assign Table</h1>
+        <p>Select any table to allocate it to a customer</p>
+
+    </div><!-- End container -->
+</div>
+
+
+
+<div class="seatingArea">
+
+</div>
+<div class="seat">
+    <!--<img scr="http://restaurantinteriors.com/wp-content/uploads/2009/01/restaurant_table_layout_drawings1.jpg">-->
+    <img id="my_image" class="seating" src="http://restaurantinteriors.com/wp-content/uploads/2009/01/restaurant_table_layout_drawings1.jpg" width="600" height="400">
+    <button id="button_id1" />
+    <button id="button_id2" />
+    <button id="button_id3" />
+    <button id="button_id4" />
+    <button id="button_id5" />
+    <button id="button_id6" />
+
+</div>
+
+<div class=" text-center">
+
+    <a href="ownerRequirements.html" class="btn btn-success ">CONFIRM</a>
+
+</div>
+
+
+</body>
+</html>

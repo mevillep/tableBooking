@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Reserve your table</title>
+    <!--<link rel="stylesheet" type="text/css" href="style.css">-->
+    <!-- Latest compiled and minified CSS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"  crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css"  crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script> src="http://code.jquery.com/jquery-2.1.4.min.js" </script>
+    <script src="http://jqueryvalidation.org/files/dist/jquery.validate.min.js"></script>
+    <script src="http://jqueryvalidation.org/files/dist/additional-methods.min.js"></script>
+
+
+</head>
+<body data-spy="scroll" data-target="#my-navbar">
+
+
+<nav class="navbar navbar-inverse navbar-fixed-top" id="my-navbar">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <a href="" class="navbar-brand">BookMyTable</a>
+        </div><!-- Navbar Header-->
+        <div class="collapse navbar-collapse" id="navbar-collapse">
+
+            <a href="owner.html" class="btn btn-warning navbar-btn navbar-right">Owner login</a>
+            <ul class="nav navbar-nav">
+                <li><a href="#registration">Book</a>
+                <li><a href="#gallery">Gallery</a>
+                <li><a href="#contact">ContactUs</a>
+            </ul>
+        </div>
+    </div><!-- End Container-->
+</nav><!-- End navbar -->
+
+
+
+<div class="jumbotron ">
+    <div class="container text-center bookTable ">
+        <h1 class="upper-case">Book Your Table</h1>
+        <p>Hi there, don't wait. Book your table. Stay ahead of game</p>
+
+        <p> <span class="glyphicon glyphicon-map-marker"></span>40 Shuman Blvd Suite 302, Naperville, IL 60563 <span class="glyphicon glyphicon-map-marker"></span></p>
+
+
+
+    </div><!-- End container -->
+</div>
+
+
+
+
+
+
+
+<div class="container" >
+    <div class="text-center buttonToggle">
+
+            <button type="button" id="customerToggle" class="btn btn-primary">Customer Registration</button>
+
+            <button type="button" id="ownerToggle" class="btn btn-primary">Owner Registration</button>
+
+        </div>
+
+    </div>
+
+
+
+
+    <form action="" class="form-horizontal customerForm">
+        <div class="form-group col-md-6 col-lg-6 col-sm-12">
+            <label for="user-name" class="col-lg-2 control-label">Name</label>
+            <div class="col-lg-10">
+                <div class="input-group">
+                    <span class="input-group-addon glyphicon glyphicon-user"></span>
+                    <input type="text" class="form-control" id="user-name" placeholder="Enter you name" required>
+
+                </div>
+
+            </div>
+        </div><!-- End form group -->
+
+
+        <div class="form-group col-md-6 col-lg-6 col-sm-12">
+            <label for="phone" class="col-lg-2 control-label">Contact</label>
+            <div class="col-lg-10">
+                <div class="input-group">
+                    <span class="input-group-addon glyphicon glyphicon-earphone"></span>
+                <input type="tel" class="form-control" pattern='[\+]\d{2}[\(]\d{2}[\)]\d{4}[\-]\d{4}' id="phone" placeholder="Phone Number" required>
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row">
+        <div class="col-lg-3 col-md-3"></div>
+        <div class="form-group  col-md-6 col-lg-6 col-sm-12">
+            <label for="party" class="col-lg-2 control-label">Party size</label>
+            <div class="col-lg-10">
+                <div class="input-group">
+                    <span class="input-group-addon glyphicon glyphicon-cutlery"></span>
+                <input type="tel" class="form-control" id="party" placeholder="Enter party size" required>
+            </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-3"></div>
+        </div>
+
+
+
+
+
+        <div class="form-group col-md-6 col-lg-6 col-sm-12">
+            <label for="date" class="col-lg-2 control-label">Date</label>
+            <div class="col-lg-10">
+                <div class="input-group">
+                    <span class="input-group-addon glyphicon glyphicon-hand-right"></span>
+
+                <input type="date" class="form-control" id="date" placeholder="Choose a Date" required>
+            </div>
+            </div>
+        </div>
+
+        <div class="form-group col-md-6 col-lg-6 col-sm-12">
+            <label for="time" class="col-lg-2 control-label">Time</label>
+            <div class="col-lg-10">
+
+                <div class="input-group">
+                    <span class="input-group-addon glyphicon glyphicon-hand-right"></span>
+                <input type="time" class="form-control" id="time" placeholder="Choose a Time" required>
+            </div>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-lg-3 col-md-3"></div>
+            <div class="form-group  col-md-6 col-lg-6 col-sm-12">
+                <label for="user-message" class="col-lg-2 control-label">Message</label>
+                <div class="col-lg-10">
+                    <textarea name="user-message" id="user-message" class="form-control"
+                              cols="5" rows="10" placeholder="Enter your Special needs"></textarea>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3"></div>
+        </div>
+
+
+
+
+        <div class=" col-lg-12 form-group text-center" >
+
+                <button type="button" class="btn btn-success generate"  data-toggle="modal" data-target=".bs-example-modal-sm">Submit</button>
+
+           <!--Modal to display the confirmation code-->
+
+            <!--<div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">-->
+                <!--<div class="modal-dialog modal-sm">-->
+                    <!--<div class="modal-content" id="op"  >-->
+                        <!--...-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+
+
+
+               <!--<button type="button" id="edit" class="btn btn-warning" data-toggle="tooltip" data-placement="right" title="Tooltip on right" data-content="Click to edit an existing reservation">Edit</button>-->
+            <a href="editReservation.html" class="btn btn-warning ">Edit</a>
+        </div>
+<hr>
+
+    </form>
+
+<div>
+    <section class="loginOwner ownerForm" >
+        <div class="row ">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Owner Login:</h3>
+                    </div>
+                    <div class="panel-body">
+
+                        <form class="form-horizontal">
+                            <div class="form-group">
+                                <label for="name" class="col-sm-2 control-label">Email</label>
+                                <div class="col-sm-10">
+                                    <div class="input-group">
+                                        <span class="input-group-addon glyphicon glyphicon-user"></span>
+                                        <input type="email" class="form-control" id="name" placeholder="Email">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+                                <div class="col-sm-10">
+
+                                    <div class="input-group">
+                                        <span class="input-group-addon glyphicon glyphicon-asterisk"></span>
+                                        <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="col-sm-offset-2 col-sm-10">
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox"> Remember me
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-sm-offset-2 col-sm-10">
+                                    <button type="submit" class="btn btn-primary">Sign in</button>
+
+                                    <a href="index.html" class="btn btn-info" role="button">Home</a>
+                                </div>
+                            </div>
+                        </form>
+
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+
+
+    </section>
+
+
+</div>
+
+
+
+<!--End cusotmerRegistration-->
+
+
+
+
+
+<div class="container gallery">
+    <section>
+        <div class="page-header text-center" id="gallery">
+            <h2>Gallery.<small> Check out the Awesome Gallery</small></h2>
+        </div>
+
+        <div class="carousel slide" id="screenshot-carousel" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#screenshot-carousel" data-slide-to="0" class="active"></li>
+                <li data-target="#screenshot-carousel" data-slide-to="1"></li>
+                <li data-target="#screenshot-carousel" data-slide-to="2"></li>
+                <li data-target="#screenshot-carousel" data-slide-to="3"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src="images/highway.jpg" alt="Text of the image">
+                    <div class="carousel-caption">
+                        <h3>Highway heading</h3>
+                        <p>This is the caption</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/river.jpg" alt="Text of the image">
+                    <div class="carousel-caption">
+                        <h3>River heading</h3>
+                        <p>This is the caption</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/street.jpg" alt="Text of the image">
+                    <div class="carousel-caption">
+                        <h3>Street heading</h3>
+                        <p>This is the caption</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/painting.jpg" alt="Text of the image">
+                    <div class="carousel-caption">
+                        <h3>Painting heading</h3>
+                        <p>This is the caption</p>
+                    </div>
+                </div>
+
+            </div><!-- End Carousel inner -->
+            <a href="#screenshot-carousel" class="left carousel-control" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+            <a href="#screenshot-carousel" class="right carousel-control" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
+        </div><!-- End Carousel -->
+
+    </section>
+</div>
+
+<div class="jumbotron">
+<footer id="contact">
+    <hr>
+    <div class="container text-center">
+        <h3>Subscribe for free stuff</h3>
+        <p>Enter your name and email</p>
+
+        <form action="" class="form-inline">
+            <div class="form-group">
+                <label for="subscription">Subscribe</label>
+                <input type="text" class="form-control" id="subscription" placeholder="Your name">
+            </div>
+            <div class="form-group">
+                <label for="email">Email address</label>
+                <input type="text" class="form-control" id="email" placeholder="Enter your Email">
+            </div>
+            <button type="submit" class="btn btn-default">Subscribe</button>
+
+        </form>
+
+        <hr>
+        <ul class="list-inline">
+            <li><a href="https://twitter.com/EgenSolutions">Twitter</a></li>
+            <li><a href="https://www.facebook.com/EgenSolutionsInc/?fref=ts">Facebook</a></li>
+
+        </ul>
+
+        <p>&copy; Copyright @ 2014</p>
+
+    </div><!-- end Container-->
+
+
+</footer>
+
+</div>
+
+<script> src="http://code.jquery.com/jquery-2.1.4.min.js" </script>
+<script> src="script.js" </script>
+
+<script>
+    $( document ).ready(function() {
+
+        $( ".ownerForm" ).hide();
+        $( ".customerForm" ).hide();
+        $( "#customerToggle" ).click(function() {
+
+            $( ".customerForm" ).toggle( "slow" );
+            $( ".ownerForm" ).hide();
+        });
+
+        $( "#ownerToggle" ).click(function() {
+            $( ".ownerForm" ).toggle();
+            $( ".customerForm" ).hide();
+        });
+
+
+
+//        var dateToday = new Date();
+//       // console.log(dateToday);
+//        $(function() {
+//            $( "#date" ).datepicker({
+//                numberOfMonths: 3,
+//                showButtonPanel: true,
+//                minDate: 0
+//            });
+//        });
+
+        $("#date").datepicker({ minDate: 0 });
+
+
+
+
+            $( ".generate" ).click(function() {
+
+                $(".customerForm").validate();
+//                $("#op").data("Your unique code is "+Math.floor(Math.random() * (1000)));
+
+             });
+
+            setTimeout(function(){
+                $( "#detail" ).html( "<small>Enter your booking details</small>" );
+            },5000)
+
+        $( "#edit" ).bind( "click", function() {
+            $( this ).alert( "Click to edit your reservation " );
+        });
+
+
+
+ });
+
+
+</script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" crossorigin="anonymous"></script>
+</body>
+</html>

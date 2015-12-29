@@ -8,14 +8,10 @@
     <!-- Latest compiled and minified CSS -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"  crossorigin="anonymous">
-
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css"  crossorigin="anonymous">
-
     <link rel="stylesheet" href="style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script> src="http://code.jquery.com/jquery-2.1.4.min.js" </script>
-    <script src="http://jqueryvalidation.org/files/dist/jquery.validate.min.js"></script>
-    <script src="http://jqueryvalidation.org/files/dist/additional-methods.min.js"></script>
+
+
 
 
 </head>
@@ -179,7 +175,7 @@
 
 
                <!--<button type="button" id="edit" class="btn btn-warning" data-toggle="tooltip" data-placement="right" title="Tooltip on right" data-content="Click to edit an existing reservation">Edit</button>-->
-            <a href="editReservation.html" class="btn btn-warning ">Edit</a>
+            <a href="editReservation.html" class="btn btn-warning ">Edit/Cancel</a>
         </div>
 <hr>
 
@@ -350,63 +346,14 @@
 
 </div>
 
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script> src="http://code.jquery.com/jquery-2.1.4.min.js" </script>
-<script> src="script.js" </script>
+<script src="http://jqueryvalidation.org/files/dist/jquery.validate.min.js"></script>
+<script src="http://jqueryvalidation.org/files/dist/additional-methods.min.js"></script>
 
-<script>
-    $( document ).ready(function() {
-
-        $( ".ownerForm" ).hide();
-        $( ".customerForm" ).hide();
-        $( "#customerToggle" ).click(function() {
-
-            $( ".customerForm" ).toggle( "slow" );
-            $( ".ownerForm" ).hide();
-        });
-
-        $( "#ownerToggle" ).click(function() {
-            $( ".ownerForm" ).toggle();
-            $( ".customerForm" ).hide();
-        });
-
-
-
-//        var dateToday = new Date();
-//       // console.log(dateToday);
-//        $(function() {
-//            $( "#date" ).datepicker({
-//                numberOfMonths: 3,
-//                showButtonPanel: true,
-//                minDate: 0
-//            });
-//        });
-
-        $("#date").datepicker({ minDate: 0 });
-
-
-
-
-            $( ".generate" ).click(function() {
-
-                $(".customerForm").validate();
-//                $("#op").data("Your unique code is "+Math.floor(Math.random() * (1000)));
-
-             });
-
-            setTimeout(function(){
-                $( "#detail" ).html( "<small>Enter your booking details</small>" );
-            },5000)
-
-        $( "#edit" ).bind( "click", function() {
-            $( this ).alert( "Click to edit your reservation " );
-        });
-
-
-
- });
-
-
-</script>
+<script type="text/javascript" src="script.js"></script>
 
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" crossorigin="anonymous"></script>
 </body>

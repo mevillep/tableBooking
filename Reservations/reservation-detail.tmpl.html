@@ -1,0 +1,47 @@
+
+
+<div class="reservations">
+    <div class="container text-center" id="reservations">
+
+        <div class="page-header text-center">
+            <h2>Reservation Detail.<small> See your Reservations detail. See to it that that you give table based on party size! </small></h2>
+        </div>
+
+
+
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th>Remove</th>
+
+                <th>Id</th>
+                 <th ng-click="reservationListVm.sortBy='name'; reservationListVm.sortOrder = !reservationListVm.sortOrder;">Name</th>
+                <th ng-click="reservationListVm.sortBy='phone'; reservationListVm.sortOrder = !reservationListVm.sortOrder;">Phone</th>
+                 <th ng-click="reservationListVm.sortBy='partySize'; reservationListVm.sortOrder = !reservationListVm.sortOrder;">Party</th>
+                <th ng-click="reservationListVm.sortBy='date'; reservationListVm.sortOrder = !reservationListVm.sortOrder;">Date</th>
+                 <th ng-click="reservationListVm.sortBy='message'; reservationListVm.sortOrder = !reservationListVm.sortOrder;">Table Size</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td><a ng-href="#/deleteReservation/{{reservationDetailVm.detail.id}}"><span class="glyphicon glyphicon-remove"></span></a></td>
+
+                <td>{{reservationDetailVm.detail.id}}</td>
+
+                <td>{{reservationDetailVm.detail.name}}</td>
+                <td>{{reservationDetailVm.detail.contact}}</td>
+
+                <td>{{reservationDetailVm.detail.partySize}}</td>
+                <td>{{reservationDetailVm.detail.date}}</td>
+
+                 <td>{{reservationDetailVm.detail.tableSize}}</td>
+            </tr>
+            </tbody>
+        </table>
+
+
+
+
+
+    </div>
+</div>

@@ -1,0 +1,222 @@
+<!--<form ng-submit="mainVm.addEmployee()" novalidate name="empForm">-->
+    <!--<div class="form-group">-->
+        <!--<label for="name">Name</label>-->
+        <!--<input type="text" class="form-control" id="name" name="name" placeholder="Your Name" ng-model="mainVm.emp.name" required minlength="5">-->
+        <!--<div class="errors" ng-messages="empForm.name.$error" ng-if="empForm.name.$dirty">-->
+            <!--<p ng-message="required">Name is required</p>-->
+            <!--<p ng-message="minlength">Name must be more than 4 chars.</p>-->
+        <!--</div>-->
+    <!--</div>-->
+
+    <!--<button type="submit" class="btn btn-primary" ng-disabled="empForm.$invalid">Add Employee</button>-->
+<!--</form>-->
+
+<!--<form ng-submit="mainVm.addEmployee()" novalidate name="empForm">-->
+
+
+
+    <!--<div class="form-group col-md-6 col-lg-6 col-sm-12">-->
+        <!--<label for="name" class="col-lg-2 control-label">Name</label>-->
+        <!--<div class="col-lg-10">-->
+            <!--<div class="input-group">-->
+                <!--<span class="input-group-addon glyphicon glyphicon-user"></span>-->
+
+                <!--<input type="text" class="form-control" id="name" name="name" placeholder="Your Name" ng-model="mainVm.emp.name" required minlength="5">-->
+
+
+            <!--</div>-->
+            <!--<div class="errors" ng-messages="empForm.name.$error" ng-if="empForm.name.$dirty">-->
+                <!--<p ng-message="required">Name is required</p>-->
+                <!--<p ng-message="minlength">Name must be more than 4 chars.</p>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>&lt;!&ndash; End form group &ndash;&gt;-->
+
+
+    <!--&lt;!&ndash;<div class="form-group">&ndash;&gt;-->
+        <!--&lt;!&ndash;<label for="name">Name</label>&ndash;&gt;-->
+        <!--&lt;!&ndash;<input type="text" class="form-control" id="name" name="name" placeholder="Your Name" ng-model="mainVm.emp.name" required minlength="5">&ndash;&gt;-->
+        <!--&lt;!&ndash;<div class="errors" ng-messages="empForm.name.$error" ng-if="empForm.name.$dirty">&ndash;&gt;-->
+            <!--&lt;!&ndash;<p ng-message="required">Name is required</p>&ndash;&gt;-->
+            <!--&lt;!&ndash;<p ng-message="minlength">Name must be more than 4 chars.</p>&ndash;&gt;-->
+        <!--&lt;!&ndash;</div>&ndash;&gt;-->
+    <!--&lt;!&ndash;</div>&ndash;&gt;-->
+    <!--<div class="form-group">-->
+        <!--<label for="email">Email</label>-->
+        <!--<input type="email" class="form-control" id="email" name="email" placeholder="Your Email" ng-model="mainVm.emp.email" required>-->
+        <!--<div class="errors" ng-messages="empForm.email.$error"  ng-if="empForm.email.$dirty">-->
+            <!--<p ng-message="required">Email is required</p>-->
+            <!--<p ng-message="email">Email is invalid</p>-->
+        <!--</div>-->
+    <!--</div>-->
+    <!--<div class="form-group">-->
+        <!--<label for="city">City</label>-->
+        <!--<input type="text" class="form-control" id="city" name="city" placeholder="Your City" ng-model="mainVm.emp.address.city" required>-->
+        <!--<div class="errors" ng-messages="empForm.city.$error" ng-if="empForm.city.$dirty">-->
+            <!--<p ng-message="required">City is required</p>-->
+        <!--</div>-->
+    <!--</div>-->
+    <!--<div class="form-group">-->
+        <!--<label for="company">Company</label>-->
+        <!--<input type="text" class="form-control" id="company" name="company" placeholder="Your Company" ng-model="mainVm.emp.company.name" required>-->
+        <!--<div class="errors"  ng-messages="empForm.company.$error" ng-if="empForm.company.$dirty">-->
+            <!--<p ng-message="required">Company is required</p>-->
+        <!--</div>-->
+    <!--</div>-->
+    <!--<div class="form-group">-->
+        <!--<label for="phone">Phone</label>-->
+        <!--<input type="text" class="form-control" id="phone" name="phone" placeholder="Your Phone" ng-model="mainVm.emp.phone" required pattern="^[0-9]{10}$">-->
+        <!--<div class="errors"  ng-messages="empForm.phone.$error" ng-if="empForm.phone.$dirty">-->
+            <!--<p ng-message="required">Phone is required</p>-->
+            <!--<p ng-message="pattern">Phone must have 10 digits</p>-->
+        <!--</div>-->
+    <!--</div>-->
+    <!--<div class="form-group">-->
+        <!--<label for="website">Website</label>-->
+        <!--<input type="url" class="form-control" id="website" name="website" placeholder="Your Website" ng-model="mainVm.emp.website" required>-->
+        <!--<div class="errors"  ng-messages="empForm.website.$error" ng-if="empForm.website.$dirty">-->
+            <!--<p ng-message="required">Website is required</p>-->
+            <!--<p ng-message="url">Website is invalid</p>-->
+        <!--</div>-->
+    <!--</div>-->
+    <!--<button type="submit" class="btn btn-primary" ng-disabled="empForm.$invalid">Add Employee</button>-->
+<!--</form>-->
+
+
+<div class="customers">
+    <div class="container text-center" id="customers">
+
+        <div class="page-header text-center">
+            <h2> Create a customer.<small> You can create a customer Reservation</small></h2>
+        </div>
+
+
+
+<form ng-submit="customerCreateVm.autoRegister()" novalidate name="userForm">
+
+
+    <div class="form-group col-md-6 col-lg-6 col-sm-12">
+        <label for="name" class="col-lg-2 control-label">Name</label>
+        <div class="col-lg-10">
+            <div class="input-group">
+                <span class="input-group-addon glyphicon glyphicon-user"></span>
+
+                <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" ng-model="customerCreateVm.user.name" required minlength="5">
+
+
+            </div>
+            <div class="errors" ng-messages="userForm.name.$error" ng-if="userForm.name.$dirty">
+                <p ng-message="required">Name is required</p>
+                <p ng-message="minlength">Name must be more than 4 chars.</p>
+            </div>
+        </div>
+    </div><!-- End form group -->
+
+
+    <div class="form-group col-md-6 col-lg-6 col-sm-12">
+        <label for="phone" class="col-lg-2 control-label">Contact</label>
+        <div class="col-lg-10">
+            <div class="input-group">
+                <span class="input-group-addon glyphicon glyphicon-earphone"></span>
+                <input type="tel" class="form-control" ng-model="customerCreateVm.user.contact" name="phone"  id="phone" placeholder="Phone Number" required pattern="^[0-9]{10}$">
+
+            </div>
+            <div class="errors" ng-messages="userForm.phone.$error" ng-if="userForm.phone.$dirty">
+                <p ng-message="required">phone is required</p>
+                <p ng-message="pattern">phone must be 10 digits</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col-lg-3 col-md-3"></div>
+        <div class="form-group  col-md-6 col-lg-6 col-sm-12">
+            <label for="party" class="col-lg-2 control-label">Party size</label>
+            <div class="col-lg-10">
+                <div class="input-group">
+                    <span class="input-group-addon glyphicon glyphicon-cutlery"></span>
+                    <input type="tel" class="form-control" id="party" name="party" ng-model="customerCreateVm.user.partySize"  placeholder="Enter party size" required maxlength="2" pattern='[0-9]{1,2}'>
+                </div>
+                <div class="errors" ng-messages="userForm.party.$error" ng-if="userForm.party.$dirty">
+                    <p ng-message="required">party is required</p>
+                    <p ng-message="pattern">Enter valid size</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-3"></div>
+    </div>
+
+
+
+
+
+    <div class="form-group col-md-6 col-lg-6 col-sm-12">
+        <label for="date" class="col-lg-2 control-label">Date</label>
+        <div class="col-lg-10">
+            <div class="input-group">
+                <span class="input-group-addon glyphicon glyphicon-hand-right"></span>
+
+                <input type="date" class="form-control" id="date" ng-model="customerCreateVm.user.date"placeholder="Choose a Date" >
+            </div>
+        </div>
+    </div>
+
+    <div class="form-group col-md-6 col-lg-6 col-sm-12">
+        <label for="time" class="col-lg-2 control-label">Time</label>
+        <div class="col-lg-10">
+
+            <div class="input-group">
+                <span class="input-group-addon glyphicon glyphicon-hand-right"></span>
+                <input type="time" class="form-control" id="time" ng-model="customerCreateVm.user.time" placeholder="Choose a Time" >
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col-lg-3 col-md-3"></div>
+        <div class="form-group  col-md-6 col-lg-6 col-sm-12">
+            <label for="user-message" class="col-lg-2 control-label">Message</label>
+            <div class="col-lg-10">
+                    <textarea name="user-message" id="user-message" ng-model="customerCreateVm.user.message" class="form-control"
+                              cols="5" rows="10" placeholder="Enter your Special needs"></textarea>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-3"></div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-3 col-md-3"></div>
+        <div class="form-group  col-md-6 col-lg-6 col-sm-12">
+            <label for="code" class="col-lg-2 control-label">Confirmation Code</label>
+            <div class="col-lg-10">
+                <div class="input-group">
+
+                    <input type="text" class="form-control" id="code" ng-model=customerCreateVm.code placeholder="Add a customer and see your Code" readonly>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-3"></div>
+    </div>
+
+    <div class=" col-lg-12 form-group text-center" >
+
+
+    <button type="submit" class="btn btn-primary" ng-disabled="userForm.$invalid">Add Customer</button>
+
+    </div>
+
+
+    <hr>
+
+
+
+
+
+</form>
+
+
+    </div>
+</div>

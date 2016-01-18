@@ -1,0 +1,74 @@
+
+<div class="table">
+    <div class="container text-center" id="table">
+
+        <div class="page-header text-center">
+            <h2> Create a new Table.<small> You may create a tabel and then assign it to customer</small></h2>
+        </div>
+
+
+
+        <form ng-submit="tableCreateVm.register()" novalidate name="tableForm">
+
+
+
+            <div class="row">
+                <div class="col-lg-3 col-md-3"></div>
+                <div class="form-group  col-md-6 col-lg-6 col-sm-12">
+                    <label for="size" class="col-lg-2 control-label">Table Size</label>
+                    <div class="col-lg-10">
+                        <div class="input-group">
+                            <span class="input-group-addon glyphicon glyphicon-cutlery"></span>
+                            <input type="tel" class="form-control" id="size" name="size" ng-model="tableCreateVm.table.size"  placeholder="Enter table size" required maxlength="2" pattern='[0-9]{1,2}'>
+                        </div>
+                        <div class="errors" ng-messages="tableForm.size.$error" ng-if="tableForm.size.$dirty">
+                            <p ng-message="required">Code is required</p>
+                            <p ng-message="pattern">Enter valid size</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3"></div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-lg-3 col-md-3"></div>
+                <div class="form-group  col-md-6 col-lg-6 col-sm-12">
+                    <label for="type" class="col-lg-2 control-label">Table Type</label>
+                    <div class="col-lg-10">
+                        <div class="input-group">
+                            <span class="input-group-addon glyphicon glyphicon-cutlery"></span>
+                            <input type="tel" class="form-control" id="type" name="type" ng-model="tableCreateVm.table.type"  placeholder="Enter table type" required  >
+                        </div>
+                        <div class="errors" ng-messages="tableForm.type.$error" ng-if="tableForm.type.$dirty">
+                            <p ng-message="required">Type is required</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3"></div>
+            </div>
+
+
+
+
+
+            <div class=" col-lg-12 form-group text-center" >
+
+
+                <button type="submit" class="btn btn-primary" ng-disabled="tableForm.$invalid">Add Table</button>
+
+            </div>
+
+
+            <hr>
+
+
+
+
+
+        </form>
+
+
+    </div>
+</div>

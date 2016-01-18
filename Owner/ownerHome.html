@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"  crossorigin="anonymous">
+
+
+</head>
+<body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top" id="my-navbar">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+                <a href="../Restaurant/index.html" class="navbar-brand">BookMyTable</a>
+            </div><!-- Navbar Header-->
+            <div class="collapse navbar-collapse" id="navbar-collapse">
+
+
+                <a href="#/createCustomer" class="btn btn-warning navbar-btn navbar-right">Create Reservation</a>
+
+
+                <ul class="nav navbar-nav">
+
+                    <li class="dropdown">
+                        <a data-toggle="dropdown" class="dropdown-toggle" href="#">Reservations<b class="caret"></b></a>
+                        <ul role="menu" class="dropdown-menu">
+                            <li><a href="#/reservations">View All</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#/createReservation">Create</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a data-toggle="dropdown" class="dropdown-toggle" href="#">Tables<b class="caret"></b></a>
+                        <ul role="menu" class="dropdown-menu">
+                            <li><a href="#/tables">View All</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#/createTable">Create</a></li>
+
+                        </ul>
+                    </li>
+
+                    <li class="dropdown">
+                        <a data-toggle="dropdown" class="dropdown-toggle" href="#">Customers<b class="caret"></b></a>
+                        <ul role="menu" class="dropdown-menu">
+                            <li><a href="#/customers">View All</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#/createCustomer">Create</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="#/setting">Settings</a>
+
+                </ul>
+            </div>
+        </div><!-- End Container-->
+    </nav><!-- End navbar -->
+
+
+
+    <div class="jumbotron">
+    <div class="container text-center">
+
+        <div class="page-header text-center">
+            <h2>Auto Assign.<small> Assign tables automatically</small></h2>
+        </div>
+
+        <div class="btn-group btn-toggle">
+            <button class="btn btn-lg btn-default">ON</button>
+            <button class="btn btn-lg btn-primary active">OFF</button>
+        </div>
+    </div>
+    </div>
+
+
+
+
+
+    </div>
+</div>
+    <div class="container">
+
+
+                <div>
+                    <section ng-view>
+
+                    </section>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+
+
+
+
+    <div class="jumbotron">
+        <footer id="contact">
+            <hr>
+            <div class="container text-center">
+                <h3>Subscribe for free stuff</h3>
+                <p>Enter your name and email</p>
+
+                <form action="" class="form-inline">
+                    <div class="form-group">
+                        <label for="subscription">Subscribe</label>
+                        <input type="text" class="form-control" id="subscription" placeholder="Your name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email address</label>
+                        <input type="text" class="form-control" id="email" placeholder="Enter your Email">
+                    </div>
+                    <button type="submit" class="btn btn-default">Subscribe</button>
+
+                </form>
+
+                <hr>
+                <ul class="list-inline">
+                    <li><a href="https://twitter.com/EgenSolutions">Twitter</a></li>
+                    <li><a href="https://www.facebook.com/EgenSolutionsInc/?fref=ts">Facebook</a></li>
+
+                </ul>
+
+                <p>&copy; Copyright @ 2014</p>
+
+            </div><!-- end Container-->
+
+
+        </footer>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://code.angularjs.org/1.4.8/angular.js"></script>
+    <script> src="http://code.jquery.com/jquery-2.1.4.min.js" </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="../app.js"></script>
+    <script>src='public/lib/angular-bootstrap/ui-bootstrap.min.js' </script>
+    <script src="https://code.angularjs.org/1.4.8/angular-route.js"></script>
+    <script src="https://code.angularjs.org/1.4.8/angular-messages.js"></script>
+
+    <script type='text/javascript' src='//cdnjs.cloudflare.com/ajax/libs/angular-loading-bar/0.7.1/loading-bar.min.js'></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="../Customer/customer-list.controller.js"></script>
+    <script src="../Customer/customer-detail.controller.js"></script>
+    <script src="../Customer/customer-delete.controller.js"></script>
+    <script src="../Customer/customer-create.controller.js"></script>
+    <script src="../Customer/Customer-data.service.js"></script>
+
+
+    <script src="../Table/table-list.controller.js"></script>
+    <script src="../Table/table-detail.controller.js"></script>
+    <script src="../Table/table-delete.controller.js"></script>
+    <script src="../Table/table-create.controller.js"></script>
+    <script src="../Table/Table-data.service.js"></script>
+
+    <script src="../Reservations/reservation-list.controller.js"></script>
+    <script src="../Reservations/reservation-detail.controller.js"></script>
+    <script src="../Reservations/reservation-create.controller.js"></script>
+    <script src="../Reservations/reservation-delete.controller.js"></script>
+    <script src="../Reservations/Reservation-data.service.js"></script>
+
+
+    <script src="../Restaurant/setting-list.controller.js"></script>
+    <script src="../Restaurant/Setting-data.service.js"></script>
+</body>
+</html>

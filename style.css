@@ -25,9 +25,6 @@
     right: 0;
     z-index: 1;
 
-    /*display: block;*/
-    background-image: url('http://static1.squarespace.com/static/51f08295e4b07acd2a169238/t/5419a13fe4b073da922081cb/1410965848777/');
-
 
     width: 1200px;
     height: 800px;
@@ -65,3 +62,5 @@ ul.nav a:hover { color: aqua !important; }
 .seating{
     padding-bottom: 20px;
 }
+
+

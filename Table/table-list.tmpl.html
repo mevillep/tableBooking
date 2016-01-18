@@ -1,0 +1,71 @@
+
+
+<div class="tables">
+    <div class="container text-center" id="customers">
+
+        <div class="page-header text-center">
+            <h2>Tables.<small> See restaurant tables. You can create or edit table details..</small></h2>
+        </div>
+
+
+
+        <div class="row">
+            <div class="col-md-6">
+                <input type="search" class="form-control" placeholder="Search table size..." ng-model="tableListVm.searchTxt.size">
+
+            </div>
+            <div class="col-md-6">
+                <input type="search" class="form-control" placeholder="Search table status..." ng-model="tableListVm.searchTxt.status">
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-2">
+
+
+            </div>
+
+            <div class="col-md-8">
+                <table class="table table-striped table-hover">
+                    <thead>
+                    <tr>
+                        <th></th>
+                        <th>View</th>
+                        <th>Remove</th>
+
+                        <th ng-click="tableListVm.sortBy='id'; tableListVm.sortOrder = !tableListVm.sortOrder;">ID</th>
+                        <th ng-click="tableListVm.sortBy='name'; tableListVm.sortOrder = !tableListVm.sortOrder;">    Type</th>
+                        <th ng-click="tableListVm.sortBy='phone'; tableListVm.sortOrder = !tableListVm.sortOrder;">Size</th>
+                        <th ng-click="tableListVm.sortBy='partySize'; tableListVm.sortOrder = !tableListVm.sortOrder;">Status</th>
+
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr ng-repeat="table in tableListVm.tables | filter:tableListVm.searchTxt | orderBy:tableListVm.sortBy:tableListVm.sortOrder">
+                        <td></td>
+                        <td><a ng-href="#/tables/{{table.id}}"><span class="glyphicon glyphicon-user"></span></a></td>
+                        <td><a ng-href="#/deleteTable/{{table.id}}"><span class="glyphicon glyphicon-remove"></span></a></td>
+                        <td>{{table.id}}</td>
+                        <td>{{table.type}}</td>
+                        <td>{{table.size}}</td>
+                        <td>{{table.status}}</td>
+
+                    </tr>
+                    </tbody>
+                </table>
+
+
+
+
+
+            </div>
+            <div class="col-md-2">
+
+            </div>
+        </div>
+
+
+
+    </div>
+</div>

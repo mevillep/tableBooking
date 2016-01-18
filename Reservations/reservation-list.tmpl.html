@@ -1,0 +1,67 @@
+
+
+<div class="reservations">
+    <div class="container text-center" id="reservations">
+
+        <div class="page-header text-center">
+            <h2>Reservations.<small> See your Reservations. If the reservation is done, update tp closed. You can also delete a reservation.</small></h2>
+        </div>
+
+
+
+        <div class="row">
+            <div class="col-md-4">
+                <input type="search" class="form-control" placeholder="Search confirmation code..." ng-model="reservationListVm.searchTxt.customerId">
+
+            </div>
+            <div class="col-md-4">
+                <input type="search" class="form-control" placeholder="Search customer name..." ng-model="reservationListVm.searchTxt.name">
+
+            </div>
+            <div class="col-md-4">
+                <input type="search" class="form-control" placeholder="Search customer status..." ng-model="reservationListVm.searchTxt.status">
+
+            </div>
+        </div>
+        <table class="table table-striped table-hover">
+            <thead>
+            <tr>
+                <th>Detail</th>
+                <th>Remove</th>
+
+                <th ng-click="reservationListVm.sortBy='Id'; reservationListVm.sortOrder = !reservationListVm.sortOrder;">Id</th>
+                <th ng-click="reservationListVm.sortBy='customerId'; reservationListVm.sortOrder = !reservationListVm.sortOrder;">Confirmation</th>
+                <th ng-click="reservationListVm.sortBy='name'; reservationListVm.sortOrder = !reservationListVm.sortOrder;">Name</th>
+                <!--<th ng-click="reservationListVm.sortBy='phone'; reservationListVm.sortOrder = !reservationListVm.sortOrder;">Phone</th>-->
+                <th ng-click="reservationListVm.sortBy='status'; reservationListVm.sortOrder = !reservationListVm.sortOrder;">Status</th>
+                <th ng-click="reservationListVm.sortBy='partySize'; reservationListVm.sortOrder = !reservationListVm.sortOrder;">Party</th>
+                <!--<th ng-click="reservationListVm.sortBy='date'; reservationListVm.sortOrder = !reservationListVm.sortOrder;">Date</th>-->
+                <!--<th ng-click="reservationListVm.sortBy='time'; reservationListVm.sortOrder = !reservationListVm.sortOrder;">Time</th>-->
+                <!--<th ng-click="reservationListVm.sortBy='message'; reservationListVm.sortOrder = !reservationListVm.sortOrder;">Table</th>-->
+                <th ng-click="reservationListVm.sortBy='message'; reservationListVm.sortOrder = !reservationListVm.sortOrder;">Table Size</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr ng-repeat="reservation in reservationListVm.reservations | filter:reservationListVm.searchTxt | orderBy:reservationListVm.sortBy:reservationListVm.sortOrder">
+                <td><a ng-href="#/reservations/{{reservation.id}}"><span class="glyphicon glyphicon-user"></span></a></td>
+                <td><a ng-href="#/deleteReservation/{{reservation.id}}"><span class="glyphicon glyphicon-remove"></span></a></td>
+                <td>{{reservation.id}}</td>
+                <td>{{reservation.customerId}}</td>
+                <td>{{reservation.name}}</td>
+                <!--<td>{{reservation.contact}}</td>-->
+                <td>{{reservation.status}}</td>
+                <td>{{reservation.partySize}}</td>
+                <!--<td>{{reservation.date}}</td>-->
+                <!--<td>{{reservation.time}}</td>-->
+                <!--<td>{{reservation.seatingId}}</td>-->
+                <td>{{reservation.tableSize}}</td>
+            </tr>
+            </tbody>
+        </table>
+
+
+
+
+
+    </div>
+</div>

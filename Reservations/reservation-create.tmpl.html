@@ -1,0 +1,54 @@
+
+<div class="reservations">
+    <div class="container text-center" id="reservations">
+
+        <div class="page-header text-center">
+            <h2> Create a reservation.<small> You can create a Reservation to assign a Table</small></h2>
+        </div>
+
+
+
+        <form ng-submit="reservationCreateVm.register()" novalidate name="reservationForm">
+
+
+
+            <div class="row">
+                <div class="col-lg-3 col-md-3"></div>
+                <div class="form-group  col-md-6 col-lg-6 col-sm-12">
+                    <label for="id" class="col-lg-2 control-label">Confirmation Code</label>
+                    <div class="col-lg-10">
+                        <div class="input-group">
+                            <span class="input-group-addon glyphicon glyphicon-cutlery"></span>
+                            <input type="tel" class="form-control" id="id" name="id" ng-model="reservationCreateVm.reservation.id"  placeholder="Enter confirmation code" required maxlength="2" pattern='[0-9]{1,3}'>
+                        </div>
+                        <div class="errors" ng-messages="reservationForm.id.$error" ng-if="reservationForm.id.$dirty">
+                            <p ng-message="required">Code is required</p>
+                            <p ng-message="pattern">Enter valid size</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3"></div>
+            </div>
+
+
+
+
+            <div class=" col-lg-12 form-group text-center" >
+
+
+                <button type="submit" class="btn btn-primary" ng-disabled="reservationForm.$invalid">Add Reservation</button>
+
+            </div>
+
+
+            <hr>
+
+
+
+
+
+        </form>
+
+
+    </div>
+</div>

@@ -8,9 +8,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css"  crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
 
 
 
@@ -19,35 +19,22 @@
 
 <div class="jumbotron ">
     <div class="container text-center bookTable ">
-        <h1 class="upper-case">Reservation Details</h1>
-        <p>Select the Assign table button to allocate a table</p>
+        <h1 class="upper-case">Create Reservation</h1>
+        <p>Create a Reservation for a customer  </p>
 
     </div><!-- End container -->
 </div>
 
 
-<form action="" class="form-horizontal customerForm">
+<form action="POST" class="form-horizontal customerForm">
 
-    <div class="row">
-        <div class="col-lg-3 col-md-3"></div>
-        <div class="form-group  col-md-6 col-lg-6 col-sm-12">
-            <label for="party" class="col-lg-2 control-label">Conirmation Code</label>
-            <div class="col-lg-10">
-                <div class="input-group">
-                    <span class="input-group-addon glyphicon glyphicon glyphicon-asterisk"></span>
-                    <input type="tel" class="form-control" id="code" placeholder="code" required>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-3 col-md-3"></div>
-    </div>
 
     <div class="form-group col-md-6 col-lg-6 col-sm-12">
         <label for="user-name" class="col-lg-2 control-label">Name</label>
         <div class="col-lg-10">
             <div class="input-group">
                 <span class="input-group-addon glyphicon glyphicon-user"></span>
-                <input type="text" class="form-control" id="user-name" placeholder="Enter you name" required>
+                <input type="text" class="form-control" id="user-name" placeholder="Enter customer name" required>
 
             </div>
 
@@ -127,8 +114,7 @@
 
 
         <!--<button type="button" id="edit" class="btn btn-warning" data-toggle="tooltip" data-placement="right" title="Tooltip on right" data-content="Click to edit an existing reservation">Edit</button>-->
-        <a href="ownerRequirements.html" class="btn btn-success ">Okay</a>
-        <a href="seating.html" class="btn btn-warning ">Assign Table</a>
+        <a href="ownerHome.html" class="btn btn-warning ">Confirm</a>
 
     </div>
     <hr>
